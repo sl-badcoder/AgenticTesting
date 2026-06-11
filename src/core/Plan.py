@@ -1,13 +1,16 @@
-from agents import Agent
+from typing import Any, Coroutine
+
+from src.frontend.agents.Agent import BaseAgent
 
 
 class Plan:
-    def __init__(self):
-        self.agent = Agent(
-            name="Planner",
-            instructions="You are a Planner Agent."
-                         "You will Plan the testing structure.",
-            model="gpt-5.5"
-        )
 
-    async def run(self, path : str):
+    def __init__(self, SpecAgent : BaseAgent):
+        self.agent = SpecAgent
+        self.agent.instructions = f"read instructions in info/planner.md"
+        self.agent.name = "Planner"
+
+    def run(self, input : str):
+        result = self.agent.run(input=input)
+        return result
+

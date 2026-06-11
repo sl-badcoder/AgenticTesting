@@ -31,7 +31,7 @@ The loop stops when the requested line coverage is reached or the iteration limi
 ## 🚀 Quick Start
 
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/sl-badcoder/AgenticTesting.git)
 cd PythonProject2
 
 python -m venv .venv

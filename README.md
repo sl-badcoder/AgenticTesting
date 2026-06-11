@@ -32,7 +32,7 @@ The loop stops when the requested line coverage is reached or the iteration limi
 
 ```bash
 git clone https://github.com/sl-badcoder/AgenticTesting.git
-cd PythonProject2
+cd AgenticTesting
 
 python -m venv .venv
 source .venv/bin/activate

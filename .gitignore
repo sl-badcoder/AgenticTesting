@@ -55,3 +55,4 @@ htmlcov/
 # Local databases
 *.sqlite3
 *.db
+.agentic_testing/
